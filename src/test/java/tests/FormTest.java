@@ -6,7 +6,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
-public class TestsForm {
+public class FormTest {
     //Настройка
     @BeforeAll
     static void adjust() {
@@ -14,7 +14,7 @@ public class TestsForm {
         Configuration.browser = "chrome";
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.pageLoadStrategy = "eager";
-        Configuration.holdBrowserOpen = true;
+        Configuration.holdBrowserOpen = false;
     }
 
     //Заполнение формы
